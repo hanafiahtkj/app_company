@@ -53,7 +53,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:{{ setting('email') }}">{{ setting('email') }}</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+620000000000</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ setting('phone') }}</span></i>
       </div>
 
       <div class="cta d-none d-md-flex align-items-center">
@@ -675,7 +675,7 @@
             <div class="info-box">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>{!! setting('address') !!}<br></p>
             </div>
           </div>
 
@@ -683,14 +683,14 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@example.com<br>contact@example.com</p>
+              <p>{{ setting('email') }}<br>-</p>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+              <p>{{ setting('phone') }}<br>-</p>
             </div>
           </div>
         </div>
@@ -710,11 +710,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>{{ app_name() }}</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              {!! setting('address') !!}<br>
+              <strong>Phone:</strong> {{ setting('phone') }}<br>
+              <strong>Email:</strong> {{ setting('email') }}<br>
             </p>
           </div>
 
