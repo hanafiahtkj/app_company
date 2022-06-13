@@ -1,0 +1,17 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(229 229 229 / 80%);
+    border: none;
+}
+
+.bg-custom {
+    background-color: #f4f6f9;
+}
+
+.sidebar {
+    background: #3f51b5;
+}
+
+.header {
+    background: #f4f6f9;
+}

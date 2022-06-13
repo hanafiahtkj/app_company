@@ -33,6 +33,9 @@
 
     @stack('after-styles')
 
+    <!-- Custom CSS File -->
+    <link href="{{ asset('css/backend_custom.css') }}" rel="stylesheet">
+
     <x-google-analytics />
 
     @livewireStyles
@@ -44,7 +47,7 @@
     @include('backend.includes.sidebar')
     <!-- /Sidebar -->
 
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-custom">
         <!-- Header -->
         @include('backend.includes.header')
         <!-- /Header -->
