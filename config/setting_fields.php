@@ -19,6 +19,24 @@ return [
             [
                 'type'  => 'text', // input fields type
                 'data'  => 'string', // data type, string, int, boolean
+                'name'  => 'address', // unique name for field
+                'label' => 'Address', // you know what label it is
+                'rules' => 'required', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '#', // default value if you want
+            ],
+            [
+                'type'  => 'text', // input fields type
+                'data'  => 'string', // data type, string, int, boolean
+                'name'  => 'phone', // unique name for field
+                'label' => 'Phone', // you know what label it is
+                'rules' => 'required', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '#', // default value if you want
+            ],
+            [
+                'type'  => 'text', // input fields type
+                'data'  => 'string', // data type, string, int, boolean
                 'name'  => 'footer_text', // unique name for field
                 'label' => 'Footer Text', // you know what label it is
                 'rules' => 'required|min:2', // validation rule of laravel
