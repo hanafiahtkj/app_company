@@ -36,6 +36,9 @@
 
   @stack('after-styles')
 
+  <!-- Custom CSS File -->
+  <link href="{{ asset('css/frontend_custom.css') }}" rel="stylesheet">
+
   <x-google-analytics />
 
   <!-- =======================================================
