@@ -1,6 +1,6 @@
 <!-- ======= Top Bar ======= -->
 <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="container d-flex justify-content-left justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:{{ setting('email') }}">{{ setting('email') }}</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ setting('phone') }}</span></i>
