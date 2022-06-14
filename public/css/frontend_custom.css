@@ -1,3 +1,7 @@
 .services .icon-box {
     border-radius: 10px;
 }
+
+.portfolio-container .img-fluid {
+    border-radius: 10px;
+}
